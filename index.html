@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!--Viewport para correcto funcionamiento css-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--fuentes-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+    <!--Fontawsome-->
+    <script src="https://kit.fontawesome.com/206e2eed87.js" crossorigin="anonymous"></script>
+    <!--Link a hoja css-->
+    <link rel="stylesheet" href="./css/style.css">
+    <!--Favicon-->
+    <link rel="icon" href="./img/backgrounds/favicon 152px.ico">
+    <!--Compatibilidad-->
+    <script src="/javascript/html5shiv.js"></script>
+    <script src="/javascript/prefixfree.min.js"></script>
+    <title>Eco-life</title>
+</head>
+<body>
+    <header>
+       <div id="navegador">
+        
+            <h1>
+                <a href="#"><img src="./img/ecolife.svg" alt="Eco-life"></a> 
+            </h1>
+            <nav id="menu"> 
+                <ul id="hamburguesa">
+                    <li><a href="#menu"><i class="fa-solid fa-bars"></i></a></li>
+                    <li><a href="#"><i class="fa-solid fa-xmark"></i></a></li>
+                </ul>
+                <ul id="barra">
+                    <li><a href="#nosotros">Nosotros</a></li>
+                    <li><a href="#energiaSolar">Energía Solar</a></li>
+                    <li><a href="#paneles">Paneles</a></li>
+                    <li><a href="#beneficios">Beneficios</a></li>
+                    <li><a href="#calcular" class="boton">Calcular</a></li>
+                </ul>
+            </nav>
+        </div> 
+        
+        <div>
+        <h2>Cuida el planeta con la <span class="naranja">Energía Solar.</span></h2>
+        <picture>
+            <img src="./img/ecolifecircle.svg" alt="Logo circular de Eco-Life">
+        </picture>
+        
+
+        </div>
+       
+    </header>
+    <main>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+            <path fill="#003366" fill-opacity="1" d="M0,256L48,245.3C96,235,192,213,288,181.3C384,149,480,107,576,85.3C672,64,768,64,864,90.7C960,117,1056,171,1152,213.3C1248,256,1344,288,1392,304L1440,320L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"></path>
+          </svg>
+        
+        <section id="nosotros">  
+            <h2>Nosotros</h2>
+                <div>
+                <p>Bienvenido/a somos Eco-Life, una web que busca promoveer el uso de la energía solar.</p>
+                <p>La energía solar es una fuente de energía renovable que se obtiene directamente del sol. Esta energía es limpia, inagotable y no produce emisiones de gases de efecto invernadero ni otros contaminantes.</p>
+                <p>Se obtiene mediante la instalación de paneles solares en los tejados de edificios o en terrenos dedicados a la producción de energía. Como tambien se pueden colocar en hogares!</p>
+                <p>Los paneles solares están compuestos por células fotovoltaicas que convierten la luz solar en electricidad. Esta electricidad puede ser utilizada inmediatamente o almacenada en baterías para su uso posterior.</p>
+                <p>Una vez que los paneles solares están instalados, la energía solar es una fuente de energía gratuita. A largo plazo, la energía solar puede ser una forma de energía más económica que la energía tradicional de combustibles fósiles.</p>
+                <p>Nuestro objetivo es brindarte una fuente de información confiable y actualizada sobre la energía solar para que puedas tomar decisiones informadas sobre el uso de esta tecnología en tu vida diaria. ¡Explora nuestra página web y descubre todo lo que necesitas saber sobre la energía solar!</p>
+                </div>
+
+                <picture>
+                    <source media="(min-width: 1024px)" srcset="./img/plantaD.jpg">
+                    <source media="(min-width: 540px)" srcset="./img/plantaT.jpg">
+                    <img src="./img/planta.jpg" alt="Planta en crecimiento">
+                </picture>
+        
+        </section>
+
+        <section>
+            <div class="carrousel">
+                
+                <div class="conteCarrousel">
+                    
+                    <div class="itemCarrousel" id="itemCarrousel-1">
+                        <div class="itemCarrouselTarjeta">
+                            <picture>
+                                <source media="(min-width: 1024px)" srcset="./img/ingenierosD.jpg">
+                                <source media="(min-width: 540px)" srcset="./img/ingenierosT.jpg">
+                                <img src="./img/ingenieros.jpg" alt="Ingenieros analizando paneles solares">
+                            </picture>
+                        </div>
+                        <div class="itemCarrouselArrows">
+                            <a href="#itemCarrousel-3">
+                                <i class="fas fa-chevron-left"></i>
+                            </a>
+                            <a href="#itemCarrousel-2">
+                                <i class="fas fa-chevron-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <div class="itemCarrousel" id="itemCarrousel-2">
+                        <div class="itemCarrouselTarjeta">
+                            <picture>
+                                <source media="(min-width: 1024px)" srcset="./img/casaD.jpg">
+                                <source media="(min-width: 540px)" srcset="./img/casaT.jpg">
+                                <img src="./img/casa.jpg" alt="Casa con paneles solares">
+                            </picture>
+                        </div>
+                        <div class="itemCarrouselArrows">
+                            <a href="#itemCarrousel-1">
+                                <i class="fas fa-chevron-left"></i>
+                            </a>
+                            <a href="#itemCarrousel-3">
+                                <i class="fas fa-chevron-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <div class="itemCarrousel" id="itemCarrousel-3">
+                        <div class="itemCarrouselTarjeta">
+                            <picture>
+                                <source media="(min-width: 1024px)" srcset="./img/familiaD.jpg">
+                                <source media="(min-width: 540px)" srcset="./img/familiaT.jpg">
+                                <img src="./img/familia.jpg" alt="Familia recorriendo terreno con paneles solares">
+                            </picture>
+                        </div>
+                        <div class="itemCarrouselArrows">
+                            <a href="#itemCarrousel-2">
+                                <i class="fas fa-chevron-left"></i>
+                            </a>
+                            <a href="#itemCarrousel-1">
+                                <i class="fas fa-chevron-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="conteCarrouselController">
+                    <a href="#itemCarrousel-1">•</a>
+                    <a href="#itemCarrousel-2">•</a>
+                    <a href="#itemCarrousel-3">•</a>
+                </div>
+            </div>
+                
+                </div>
+            
+        </section>
+
+        <section id="energiaSolar">
+            <h2>Energía Solar</h2>
+                <p>En los últimos años, la energía solar se ha convertido en una de las formas de generación de energía más populares en todo el mundo. Los avances en la tecnología solar han hecho que la energía solar sea más accesible, económica y eficiente que nunca antes.</p>
+            
+            <h3>Importancia:</h3>
+                <ul>
+                    <li>La energía solar no emite gases de efecto invernadero, lo que ayuda a combatir el cambio climático y proteger el medio ambiente.</li>
+                    <li>Es una fuente de energía limpia y segura.</li>
+                    <li>La energía solar puede ayudar a reducir la dependencia de los combustibles fósiles.</li>
+                    <li>La energía solar puede contribuir a la creación de empleos en la industria de la energía solar, lo que puede tener un impacto positivo en la economía local y nacional.</li>
+                    <li>La energía solar puede ayudar a proteger el medio ambiente para las futuras generaciones y garantizar un futuro más sostenible y próspero.</li>
+                </ul>
+            
+            <h3>Beneficios:</h3>
+                <ul>
+                    <li>Es una fuente de energía renovable e inagotable.</li>
+                    <li>Los costos de instalación y mantenimiento de paneles solares han disminuido significativamente en los últimos años.</li>
+                    <li>Es una fuente de energía descentralizada, lo que significa que se puede generar energía en lugares remotos y llevarla a áreas urbanas o rurales.</li>
+                    <li>Puede ser una inversión rentable a largo plazo para hogares y negocios.</li>
+                    <li>Puede ser combinada con tecnologías de almacenamiento de energía para garantizar la disponibilidad de energía las 24 horas del día.
+                    </li>
+                </ul>
+
+        </section>
+
+        <section id="paneles">
+            <h2>Paneles Solares</h2>
+                <p>Los paneles solares son dispositivos que convierten la energía solar en energía eléctrica utilizable. Están compuestos de células fotovoltaicas que convierten la luz solar en electricidad mediante un proceso llamado efecto fotovoltaico.</p>
+                <p>Las células fotovoltaicas están compuestas por capas de materiales semiconductores, como el silicio, que absorben los fotones de la luz solar y liberan electrones, lo que genera una corriente eléctrica. Cada célula fotovoltaica produce solo una pequeña cantidad de electricidad, por lo que se conectan varias células en serie para formar un módulo solar.</p>
+                <p>Los paneles solares están diseñados para ser resistentes a los elementos y duraderos. Están cubiertos por vidrio templado para proteger las células fotovoltaicas y para maximizar la cantidad de luz solar que llega a ellas.</p>
+            
+                <picture>
+                    <source media="(min-width: 1024px)" srcset="./img/tecnicoD.jpg">
+                    <source media="(min-width: 540px)" srcset="./img/tecnicoT.jpg">
+                    <img src="./img/tecnico.jpg" alt="tecnico colocando panel solar">
+                </picture>
+        </section>
+
+        <section>
+
+        </section>
+
+        <section id="beneficios">
+            <h2>¿Por qué deberia colocar paneles solares?</h2>
+
+                <figure>
+                <img src="./img/foco.svg" alt="Foco">
+                </figure>
+                    
+                    <p>Los paneles solares generan electricidad a partir de una fuente de energía limpia y renovable, sin emitir gases de efecto invernadero ni otros contaminantes al medio ambiente.</p>
+
+                <figure>
+                <img src="./img/alcancia.svg" alt="Alcancía">
+                </figure>
+                        
+                    <p>La energía generada por los paneles solares es gratuita, lo que significa que una vez instalados, puedes reducir significativamente o incluso eliminar por completo tu factura de electricidad.</p>
+
+                <figure>
+                <img src="./img/fabrica.svg" alt="No a las fabricas">
+                </figure>
+
+                    <p>Puedes reducir tu dependencia de la red eléctrica y los combustibles fósiles, lo que te hace menos vulnerable a las fluctuaciones de precios y a las interrupciones del suministro.</p>
+
+                <figure>
+                <img src="./img/relog.svg" alt="Tiempo">
+                </figure>
+                    
+                    <p>Los paneles solares son duraderos y tienen una vida útil de 25 años o más, lo que significa que una vez instalados, requerirán poco mantenimiento y seguirán generando energía durante décadas.</p>
+                
+                <figure>
+                <img src="./img/inversion.svg" alt="inversión">
+                </figure>
+                    
+                    <p> La instalación de paneles solares puede aumentar el valor de tu propiedad, ya que es una característica atractiva para los compradores potenciales.</p>
+        </section>
+
+        <section id="calcular">
+            
+            <h2>¿Cuantos paneles necesito?</h2>
+                <p>Completa el siguiente formulario con tus datos y nosotros te enviaremos automaticamente un mail con el equipamiento que necesitas para tu hogar!.
+                Tambien podes dejarnos una consulta para que un asesor se contacte contigo.</p>
+                <picture>
+                    <source media="(min-width: 1024px)" srcset="./img/calcularD.jpg">
+                    <source media="(min-width: 540px)" srcset="./img/calcularT.jpg">
+                    <img src="./img/calcular.jpg" alt="Calculando presupuesto de energía">
+                </picture>
+            
+            <div>
+
+                <form action="#">
+                        <div class="itemform">
+                            <label for="nombre">Nombre: </label>
+                            <input type="text" id="nombre" name="nombre" minlength="2" maxlength="64" size="14" required>
+                        </div>
+                        <div class="itemform">
+                            <label for="nombre">Apellido: </label>
+                            <input type="text" id="apellido" name="apellido" minlength="2" maxlength="64" size="14" required>
+                        </div>
+                        <div class="itemform">
+                            <label for="email">Email: </label>
+                            <input type="email" id="email" name="email" minlength="10" maxlength="128" size="14" required>
+                        </div>
+
+                        <div>
+                            <select>
+                                <option selected>Consumo mensual.:</option>
+                                <option value="bajo">25 kwh - 200 kwh</option>
+                                <option value="medio">200 kwh - 400 kwh</option>
+                                <option value="alto">400 kwh o más.</option>
+                            </select>
+                        </div>
+
+                        <div>
+                            <select>
+                                <option selected>Metros de techo:</option>
+                                <option value="chica">10 m2 - 55 m2</option>
+                                <option value="mediana">55 m2 - 155 m2</option>
+                                <option value="grande">155 m2 o más.</option>
+                            </select>
+                        </div>
+
+                        <div class="itemform">
+                            <label for="mensaje">Consulta: </label>
+                            <textarea name="mensaje" id="mensaje" cols="33" rows="5"></textarea>
+                        </div>
+                        <div class="itemform">
+                            
+                            <input type="submit" name="boton" value="CONTACTAME">
+                        </div> 
+                </form>
+
+            </div>
+        </section>
+
+        <footer>
+            <picture>
+                <img src="./img/ecolife.svg" alt="Eco-life">
+            </picture>
+            <ul id="redes">
+                <li><a href="https://www.twitter.com/" target="_blank"><i class="fa-brands fa-twitter"></i></a></li>
+                <li><a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram"></i></a></li>
+                <li><a href="https://ar.linkedin.com/" target="_blank"><i class="fa-brands fa-linkedin"></i></a></li>
+            </ul>
+
+            <div>
+                <h2>Alumno: Nicolas Firpo</h2>
+                <ul>
+                    <li>Comisión: DWM2BV</li>
+                    <li>Turno: Mañana - 2023</li>
+                    <li>Segundo cuatrimestre</li>
+                </ul>
+            </div>
+
+            <p>Copyright &#169; 2023 - Escuela Da Vinci</p>
+
+
+        </footer>
+
+
+
+
+
+
+
+
+
+
+
+
+    </main>
+</body>
+</html>
