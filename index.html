@@ -37,7 +37,7 @@
                     <li><a href="#energiaSolar">Energía Solar</a></li>
                     <li><a href="#paneles">Paneles</a></li>
                     <li><a href="#beneficios">Beneficios</a></li>
-                    <li><a href="#calcular" class="boton">Calcular</a></li>
+                    <li><a href="#contacto" class="boton">Contacto</a></li>
                 </ul>
             </nav>
         </div> 
@@ -199,7 +199,7 @@
 
         <section id="beneficios">
             <h2>¿Por qué deberia colocar paneles solares?</h2>
-
+            <div class="grid">
             <div>
                 <figure>
                 <img src="./img/foco.svg" alt="Foco">
@@ -235,6 +235,7 @@
                     
                     <p> La instalación de paneles solares puede aumentar el valor de tu propiedad, ya que es una característica atractiva para los compradores potenciales.</p>
                 </div>
+            </div>
         </section>
 
         <section id="calcular">
@@ -247,8 +248,11 @@
                     <source media="(min-width: 540px)" srcset="./img/calcularT.jpg">
                     <img src="./img/calcular.jpg" alt="Calculando presupuesto de energía">
                 </picture>
+        
+        </section>
+
+        <section id="contacto">
             
-            <div>
 
                 <form action="#">
                         <div class="itemform">
@@ -264,7 +268,7 @@
                             <input type="email" id="email" name="email" minlength="10" maxlength="128" size="14" required>
                         </div>
 
-                        <div>
+                        <div class="itemform">
                             <select>
                                 <option selected>Consumo mensual.:</option>
                                 <option value="bajo">25 kwh - 200 kwh</option>
@@ -273,7 +277,7 @@
                             </select>
                         </div>
 
-                        <div>
+                        <div class="itemform">
                             <select>
                                 <option selected>Metros de techo:</option>
                                 <option value="chica">10 m2 - 55 m2</option>
@@ -292,20 +296,25 @@
                         </div> 
                 </form>
 
-            </div>
+        
         </section>
 
         <footer>
+
+            <div>
             <picture>
                 <img src="./img/ecolife.svg" alt="Eco-life">
             </picture>
+            </div>
+            <div>
             <ul id="redes">
                 <li><a href="https://www.twitter.com/" target="_blank"><i class="fa-brands fa-twitter"></i></a></li>
                 <li><a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram"></i></a></li>
                 <li><a href="https://ar.linkedin.com/" target="_blank"><i class="fa-brands fa-linkedin"></i></a></li>
             </ul>
+            </div>
 
-            <div>
+            <div id="datos">
                 <h2>Alumno: Nicolas Firpo</h2>
                 <ul>
                     <li>Comisión: DWM2BV</li>
@@ -313,8 +322,6 @@
                     <li>Segundo cuatrimestre</li>
                 </ul>
             </div>
-
-            <p>Copyright &#169; 2023 - Escuela Da Vinci</p>
 
 
         </footer>
