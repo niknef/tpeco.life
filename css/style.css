@@ -1,10 +1,10 @@
 /* Reseteo */
-
 *{
     margin: 0;
     padding: 0;
     border: 0;
     box-sizing: border-box;
+    overflow-x: hiden;
 }
 html {
     scroll-behavior: smooth;
@@ -20,25 +20,22 @@ p,ul,ol,a{
     color: #003366;
     font-size: 1.2em;
 }
-/*-----header-----*/
+/*-----HEADER-----*/
 header{
     background: #003366;
     width: 100vw;
-    height: 250px;
-
-    
+    height: 20em;
 }
 h1 img{
     position: fixed;
-    margin-left: 10px;
     width: 150px;
     height: 50px;
+    margin-left: 1em;
 }
 header picture>img{
-    margin: 10px 10px 0 0;
     width: 135px;
-    
-    
+    margin-top: 3em;
+    margin-right: 1.5em;
 }
 nav{
     top: 0;
@@ -50,33 +47,33 @@ section>picture img{
     margin-top: 20px;
 }
 #navegador+div{
+    width: 100vw;
     position: relative;
     top: 3em;
-    display: grid;
-    grid-template-columns: 40vw 40vw;
+    display: flex;
+    flex-direction: row;
     justify-content: space-between;
 
     
     }
 #navegador+div h2{
-    margin-top: 50px;
-    margin-left: 15px;
+    width: 300px;
+    margin-top: 3em;
+    margin-left: 1em;
     font-size: 1.6em;
     color: #cccccc; 
 }
 main{
     background-color: #cccccc;
 }
-/*----Nosotros--*/
+/*---NOSOTROS---*/
 #nosotros{
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column-reverse;
     margin: 5px 10px 10px 10px;
-
 }
-
 #nosotros div{
     margin: 20px 20px 0 20px;
 }
@@ -88,8 +85,7 @@ main{
 #nosotros h2{
     font-size: 0;
 }
-
-/*----carrito-----*/
+/*---CARRUSEL---*/
 .carrito{
     display: flex;
     justify-content: center;
@@ -153,8 +149,7 @@ main{
 .itemCarrouselArrows > a > i{
     color: #FF6600;
 }
-
-/* -----energia solar-------*/
+/* ---ENERGIASOLAR---*/
 #energiaSolar,#paneles{
     width: 100vw;
     display: flex;
@@ -183,7 +178,7 @@ main{
     font-size: 1em;
     list-style-type: disc;  
 }
-/*----Paneles-----*/
+/*---PANELES---*/
 #paneles h2{
     font-size: 1,6em;
     margin-top: 15px;
@@ -195,7 +190,7 @@ main{
 #paneles p{
     margin-top: 5px;
 }
-/*------Video-----*/
+/*---VIDEO---*/
 #video{
     display: flex;
     justify-content: center;
@@ -208,9 +203,8 @@ main{
     width: 80vw;
     height: calc(80vw * 315 / 560);
 }
-
-/*-----Beneficios-----*/
-#beneficios{
+/*---BENEFICIOS---*/
+/* #beneficios{
     background-color: #003366;
     width: 100vw;
     display: flex;
@@ -248,8 +242,7 @@ main{
     color: #cccccc;
     font-size: 1.2em;
     margin-top: 15px;
-}
-
+} */
 /*---Calcular---*/
 #calcular{
     background-color: #003366;
@@ -266,19 +259,17 @@ main{
     width: 80vw;
     text-align: center;
 }
-
 #calcular p{
     color: #cccccc;
     width: 80vw;
     margin-top: 1.5em;
     margin-bottom: 1.5em;
 }
-/*-------CONTACTO--------*/
+/*---FORMULARIO---*/
 #contacto{
     background-color: #003366;
     padding-top: 3em;
-    padding-bottom: 3em;
-    
+    padding-bottom: 3em;   
 }
 .itemform{
     display: grid;
@@ -286,20 +277,17 @@ main{
     justify-content: center;
     margin-bottom: 10px;
 }
-
 .itemform label{
     font-weight: 600;
     color: #cccccc;
 }
-
 .itemform input{
     border-radius: 15px;
     height: 25px;
     margin-top: 5px;
     border: none; 
     background-color: #cccccc;
-    padding-left: 1.5em;
-    
+    padding-left: 1.5em;  
 }
 .itemform select{
     border-radius: 15px;   
@@ -311,15 +299,12 @@ main{
     padding-left: 1.5em;
     padding-right: 1.5em;
 }
-
 .itemform textarea{
     border-radius: 15px;   
     border: none; 
     background-color: #cccccc;
     resize: none;
 } 
-
-
 input[type="submit"]{
     background-color: #79AD37;
     padding: 0;
@@ -331,53 +316,51 @@ input[type="submit"]{
     border-radius: 10px;
     grid-column: 1/2;
     justify-self: center;
-   
 }
-
-/*----FOOTER-----*/
+/*----FOOTER---*/
 footer{
-    padding: 2em 1em 0 1em;
     border-top: 2px solid #FF6600;
-    display: grid;
-    grid-template-columns: 40vw 40vw;
-    justify-content: center;
-    gap: 10vw;
+    display: flex;
+    flex-direction: column;
 
 }
-
-footer picture{
-    height: 1.4em;
+#primeraLinea{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
-
+#logo img{
+    width: 150px;
+    margin-left: 1em;
+}
 #redes{
     display:flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
+    gap: 1em;
+    margin-bottom: 0;
+    margin-right: 1em;
 }
-
 #redes li a:any-link{
     color:#FF6600;
-    font-size: 1.4em;
+    font-size: 1.6em;
 }
-
 #redes li a:-webkit-any-link{
     color:#FF6600;
-    font-size: 1.4em;
+    font-size: 1.6em;
 }
-
 #redes li a:-moz-any-link{
     color:#FF6600;
-    font-size: 1.4em;
+    font-size: 1.6em;
 }
-
 #redes li a:hover{
     color: #79AD37;
 }
-
 #datos {
-    display: inline-block;
-   margin: 0;
-    
+    display: flex;
+    flex-direction: row;
+    margin: 1em;
+    justify-content: space-between; 
 }
 #datos h2{
     display: inline-block;
@@ -387,10 +370,7 @@ footer picture{
     display: inline-block;
     font-size: 1em;
 }
-
-
 /*------CLASS generales-------*/
-
 .naranja{
     color: #FF6600;
 }
@@ -403,7 +383,7 @@ footer picture{
     padding-top: 4px;
     border-radius: 15px;
 }
-/* HAMBURGUESA */
+/*---HAMBURGUESA---*/
 #navegador{
     position: fixed;
     background: #003366;
@@ -415,16 +395,15 @@ footer picture{
     position: fixed;
     right: 15px;
     top: 2.5px;
-    
 }
 #hamburguesa li {
     list-style: none;
-    width: 2.5em;
+    width: 2em;
 }
 #hamburguesa li a {
     color: #FF6600;
     display: block;
-    font-size: 2.5em;
+    font-size: 2em;
 }
 #hamburguesa li:last-child {
     display: none;
@@ -463,27 +442,78 @@ nav:target #hamburguesa li:last-child {
     text-align: center;
     line-height: 2em;
 }
+#barra li:last-child a{
+    color: #cccccc;
+    font-weight: bold;
+}
 nav:target #barra {
     right: 0;
 }
+/*---scrollcarrito---*/
 #itemCarrousel-1, #itemCarrousel-2,#itemCarrousel-3{
     scroll-margin-top: 50px;
-   
 }
-
 /*----tablet-----*/
-@media (min-width: 540px) {
-    
+@media screen and (min-width: 540px) {
+    /*---HEADER---*/
+    h1 img{
+        position: fixed;
+        width: 200px;
+        margin-left: 1em;
+    }
     header picture>img{
         margin: 1em;
-        width: 200px;
-        
+        width: 35vw; 
     }
+    #navegador+div h2{
+        font-size: 2.2em;
+    }
+    #hamburguesa li {
+        list-style: none;
+        width: 2.2em;
+    }
+    #hamburguesa li a {
+        color: #FF6600;
+        display: block;
+        font-size: 2.2em;
+    }
+    #barra li {
+        list-style: none;
+        margin: 1em;
+        width: 40%;
+    }
+    #barra li a {
+        text-decoration: none;
+        display: block;
+        color: #FF6600;
+        text-align: center;
+        font-size: 1.8em;
+        line-height: 2em;
+    }
+    #barra li:last-child a{
+        color: #cccccc;
+        font-weight: bold;
+    }
+    .boton{
+        color: #cccccc;
+        background-color: #79AD37;
+        margin-left: 50px;
+        margin-right: 50px;
+        height: 68px;
+        padding-top: 2px;
+        border-radius: 15px;
+    }
+    /*---NOSOTOS---*/
     #nosotros div{
         margin-left: 2em;
         margin-right: 2em;
+        font-size: 1em;
+    }
+    #nosotros div p{
         font-size: 1.4em;
     }
+
+    /*---CARRUSEL---*/
     .carrito{
         display: flex;
         justify-content: center;
@@ -546,55 +576,33 @@ nav:target #barra {
     .itemCarrouselArrows > a > i{
         color: #FF6600;
     }
+    /*---ENERGIASOLAR---*/
     #energiaSolar h2{
-        font-size: 1.8em;
+        font-size: 1.6em;
         
     }
     #energiaSolar p{
-        font-size: 1.6em;
+        font-size: 1.4em;
         width: 80vw;
     }
-
     #paneles h2{
-        font-size: 1.8em;
+        font-size: 1.6em;
     }
     #paneles p{
-        font-size: 1.6em;
+        font-size: 1.4em;
         width: 80vw;
     }
-
-    .grid{
-    display: grid;
-    grid-template-columns: 40vw 40vw;
-    grid-gap: 2em;
-    justify-content: space-between;
-    
-    }
-    #beneficios img{
-        margin-left:0;
-    
-    }
-    #beneficios h2{
-        font-size: 1.8em;
-        width: 100vw;
-    }
-    #beneficios p{
-        font-size: 1.6em;
-        width: 40vw;
-    }
-
+    /*---FORMULARIO---*/
     .itemform{
         display: grid;
         grid-template-columns: 50vw;
         justify-content: center;
         margin-bottom: 10px;
-    }
-    
+    }   
     .itemform label{
         font-weight: 600;
         color: #cccccc;
-    }
-    
+    }   
     .itemform input{
         border-radius: 15px;
         height: 35px;
@@ -613,79 +621,53 @@ nav:target #barra {
         height: 35px;
         padding-left: 1.5em;
         padding-right: 1.5em;
-    }
-    
+    }  
     .itemform textarea{
         border-radius: 15px;   
         border: none; 
         background-color: #cccccc;
         resize: none;
-    } 
-    
-    
+    }   
     input[type="submit"]{
         background-color: #79AD37;
         padding: 0;
         width: 30vw;
         height: 2.5em;
-        font-size: 1em;
+        font-size: 1.2em;
         font-weight: 600;
         color: white;
         border-radius: 10px;
         grid-column: 1/2;
         justify-self: center;
-       
     }
-
-    footer{
-        padding: 2em 1em 0 1em;
-        border-top: 4px solid #FF6600;
-        display: grid;
-        grid-template-columns: 30vw 30vw;
-        justify-content: center;
-        gap: 15vw;
-    
-    }
-    
-    
+    /*---FOOTER---*/
+    #logo img{
+        width: 200px;
+        margin-left: 2em;
+    }   
     #redes{
         display:flex;
         flex-direction: row;
-        justify-content: space-around;
-    }
-    
+        justify-content: space-between;
+        gap: 2em;
+        margin-bottom: 0;
+        margin-right: 2em;
+    }  
     #redes li a:any-link{
         color:#FF6600;
-        font-size: 3em;
-    }
-    
+        font-size: 2em;
+    }   
     #redes li a:-webkit-any-link{
         color:#FF6600;
-        font-size: 3em;
-    }
-    
+        font-size: 2em;
+    }    
     #redes li a:-moz-any-link{
         color:#FF6600;
-        font-size: 3em;
+        font-size: 2em;
     }
-    
-    #redes li a:hover{
-        color: #79AD37;
-    }
-    #datos{
-        margin-top: -5em;
-    }
-    #datos h2{
-        font-size: 1.2em;
-    }
-    #datos ul{
-        font-size: 1em;
-    }
-    
 }
-
 /*-----desktop----*/
-@media (min-width: 1024px) {
+@media screen and (min-width: 1024px) {
     
         
 
