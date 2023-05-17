@@ -20,6 +20,10 @@ p,ul,ol,a{
     color: #003366;
     font-size: 1.2em;
 }
+em,strong{
+    font-style: normal;
+    font-weight: normal;
+}
 /*-----HEADER-----*/
 header{
     background: #003366;
@@ -170,18 +174,20 @@ main{
     padding: 15px;
     margin-bottom: 30px;
 }
-.lista:first-child{
-    font-size: 1.4em;
+.lista h3{
+    font-size: 1.4rem;
 } 
+
 .lista li{
     margin: 5px 10px 5px 20px;
-    font-size: 1em;
+    font-size: 1.2rem;
     list-style-type: disc;  
 }
 /*---PANELES---*/
 #paneles h2{
-    font-size: 1,6em;
+    font-size: 1.6em;
     margin-top: 15px;
+    text-align: center;
 }
 #paneles h2 + div{
     width: 80vw;
@@ -195,7 +201,7 @@ main{
     display: flex;
     justify-content: center;
     width: 100vw;
-    margin-top: -2px;
+    margin-top: -5px;
     background-color: #003366;
     padding-bottom: 20px;
 }
@@ -203,46 +209,45 @@ main{
     width: 80vw;
     height: calc(80vw * 315 / 560);
 }
+
 /*---BENEFICIOS---*/
-/* #beneficios{
+#beneficios{
     background-color: #003366;
     width: 100vw;
     display: flex;
-    align-items: center;
-    justify-content: center;
     flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
 }
 #beneficios h2{
     color: #cccccc;
-    margin-top: 25px;
-    font-size: 1.6em;
-   width: 80vw;
-   text-align: center;
-    
-}
-.grid{
-    display: grid;
-    grid-template-columns: 70vw;
-  
-    justify-content: center;
-    align-content: center;
-    }
-
-.grid div{
+    text-align: center;
     align-self: center;
-    width: 80vw;
-}
-#beneficios img{
-    margin-left: 4em;
-    margin-top: 30px;
-    width: 200px;
+    font-size: 1.6em;
+    margin-top: 2em;
+    margin-bottom: 2em;
+   
 }
 #beneficios p{
-    align-self: center;
     color: #cccccc;
+    margin-top: 1em;
     font-size: 1.2em;
-    margin-top: 15px;
-} */
+}
+
+.caja{
+    width: 70vw;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 4em;
+}
+.cajas{
+    max-width: 200px;
+    position: relative; 
+    overflow: hidden;
+
+}
 /*---Calcular---*/
 #calcular{
     background-color: #003366;
@@ -360,7 +365,9 @@ footer{
     display: flex;
     flex-direction: row;
     margin: 1em;
-    justify-content: space-between; 
+    justify-content: space-around; 
+    align-content: center;
+    align-items: center;
 }
 #datos h2{
     display: inline-block;
@@ -382,6 +389,12 @@ footer{
     height: 48px;
     padding-top: 4px;
     border-radius: 15px;
+}
+.bold{
+    font-weight: bold;
+}
+.none{
+    display: none;
 }
 /*---HAMBURGUESA---*/
 #navegador{
@@ -497,6 +510,8 @@ nav:target #barra {
     .boton{
         color: #cccccc;
         background-color: #79AD37;
+        min-width: 150px;
+        
         margin-left: 50px;
         margin-right: 50px;
         height: 68px;
@@ -512,7 +527,6 @@ nav:target #barra {
     #nosotros div p{
         font-size: 1.4em;
     }
-
     /*---CARRUSEL---*/
     .carrito{
         display: flex;
@@ -643,15 +657,16 @@ nav:target #barra {
     /*---FOOTER---*/
     #logo img{
         width: 200px;
-        margin-left: 2em;
+        margin-left: 4em;
+        margin-top: 1em;
     }   
     #redes{
         display:flex;
         flex-direction: row;
         justify-content: space-between;
         gap: 2em;
-        margin-bottom: 0;
-        margin-right: 2em;
+        margin-right: 4em;
+        margin-top: 1em;
     }  
     #redes li a:any-link{
         color:#FF6600;
@@ -665,12 +680,267 @@ nav:target #barra {
         color:#FF6600;
         font-size: 2em;
     }
+    #datos {
+        display: flex;
+        flex-direction: row;
+        margin: 2em 6em 2em 4em;
+        justify-content: space-around; 
+        align-content: center;
+        align-items: center;
+    }
+    #datos h2{
+        font-size: 1.2em;
+        vertical-align: center;
+    }
+    #datos ul{
+        font-size: 1em;
+    }
+
 }
 /*-----desktop----*/
 @media screen and (min-width: 1024px) {
-    
+    body{
+        width: 100vw;
+        overflow-x: hidden;
+    }
+    #hamburguesa {
+        display: none;
+    }
+    header {
+        width: 100%;
+        height: 550px;
+        margin-top: 0;
+        overflow-y: hidden;
+    }
+    h1 a{
+        position: sticky;
+        width: 100%;
+        height: 100%;
+        z-index: 5;
+    }
+    h1>a>img{
+        margin-left: 1em;
+    }
+    header picture>img{
+        margin-top: 6em;
+        margin-right: 8em;
+        width: 400px; 
+    }
+    header:nth-last-of-type(div){
+        margin-top:150px;
+    }
+    #navegador+div h2{
+        width: 700px;
+        margin-top: 3em;
+        margin-left: 2em;
+        font-size: 4em;
+        color: #cccccc; 
+    }
+    #navegador{
+        width: 100vw;
         
+    }
+    #menu {
+        position: fixed;
+        width: 100vw;
+        margin: 0;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+    }
+    #barra {
+        vertical-align: center;
+        position: static;
+        width: 70%;
+        margin-top: -42px;
+        height: auto;
+        overflow: hidden;
+        flex-direction: row;
+        align-items: flex-end;
+        background: none;
+         
+    }
+    #barra li{
+        width: 20%;
+        color:  #FF6600;
+        font-size: 0.8em;
+        margin-top: 2em;
+        line-height: normal;
 
+    }
+    #barra li a{
+        font-size: 1.4em;
+        margin: 0;
+        padding: 0;
+    }
+    #barra li a:hover{
+        color: #cccccc;
+    }
+    .boton li a:visited{
+        color: #cccccc;
+    }
+    #barra li a:visited{
+        color: white;
+    }
+    .boton{
+        color: #cccccc;
+        background-color: #79AD37;
+        padding: 0;
+        margin: 0;
+        height: 46px;
+        border-radius: 15px;
+        overflow: hidden;
+        align-items: center;
+    }
+    /*---nosotros---*/
+    #nosotros{
+        display: flex;
+        flex-direction: row;
+    }
+    #nosotros div{
+        width: 50vw;
+    }
+    /*---carrito---*/
+    .carrito{
+        width: 100vw;
+        display: flex;
+        justify-content: center;
+    }
+    .carrousel{
+        width: 800px;
+        height: 700px;
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+    .conteCarrousel{
+        width: 800px;
+        height: 533px;
+        overflow: hidden;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+    }
+    .itemCarrousel{
+        position:relative;
+        width: 800px;
+        height: 533px;
+    }
+    .itemCarrouselTarjeta{
+        width: 100%;
+        height: 100%x;
+    }
+    .itemCarrouselTarjeta picture{
+        width: 100%;
+        height: 100%;
+        border-radius: 0;
         
-
+    }
+    .itemCarrouselArrows{
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: 100%;
+        width: 100%; 
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 20px; 
+        font-size: 2em;
+    }
+    .itemCarrouselArrows > i:hover {
+        cursor: pointer;
+    }
+    .conteCarrouselController{
+        width: 100%;
+        display: flex;
+        justify-content: space-evenly;
+        
+    }
+    .conteCarrouselController > a{
+        text-decoration: none;
+        font-size: 2em;
+        color: #FF6600;
+    }
+    .itemCarrouselArrows > a > i{
+        color: #FF6600;
+    }
+    /*--energia---*/
+    #web{
+        display: flex;
+        flex-direction: row;
+        margin-top: 30px;
+        
+    }
+    .lista{
+        width: 30vw;
+        margin-left: 50px;
+    }
+    .lista h3{
+        font-size: 1.6rem;
+    }
+    .lista li{
+        font-size: 1.4rem;
+    }
+    /*---paneles*/
+    #paneles{
+        width: 100vw;
+        overflow-x: hidden;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;  
+    }
+    #paneles div{
+        width: 400px;
+    }
+    #paneles p{
+        width: 600px;
+        margin-left: 50px;
+        margin-top: 25px;
+    }
+    #paneles h2{
+        text-align: start;
+    }
+    #paneles picture{
+        margin-left: -200px;
+    }
+    /*---video---*/
+    #video iframe{
+        width: 60vw;
+        height: calc(60vw * 315 / 560);
+    }
+    #calcular{
+        display: flex;
+        flex-direction: row;
+        vertical-align: top;
+    }
+    #calcular h2{
+        text-align: start;
+    }
+    #calcular div{
+        width: 40vw;
+        vertical-align: top;
+    }
+    #calcular p{
+        width: 35vw;
+    }
+    #calcular picture{
+        margin-top: 200px;
+    }
+    /*---footer---*/
+    .itemform{
+        grid-template-columns: 30vw 50vw;
+        justify-content: center;
+    }
+    input[type="submit"]{
+        background-color: #79AD37;
+        font-weight: 600;
+        color: white;
+        margin-top: 20px;
+        padding: 10px;
+        border-radius: 10px;
+        grid-column: 1/3;
+        justify-self: center;
+    }
 }
